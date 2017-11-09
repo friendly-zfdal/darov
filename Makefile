@@ -1,9 +1,9 @@
 all: hello
-hello: main.o index_first_zero.o index_last_zero.o sum_between.o sum_before_and_after.o index_first_zero.h index_last_zero.h sum_between.h sum_before_and_after.h
-	gcc main.o index_first_zero.o index_last_zero.o sum_between.o sum_before_and_after.o
-main.o: main.c
-	gcc -c main.c
-index_first_zero.0: index_first_zero.c index_first_zero.h
+hello: menu.o index_first_zero.o index_last_zero.o sum_between.o sum_before_and_after.o index_first_zero.h index_last_zero.h sum_between.h sum_before_and_after.h
+	gcc menu.o index_first_zero.o index_last_zero.o sum_between.o sum_before_and_after.o -o menu
+menu.o: menu.c
+	gcc -c menu.c
+index_first_zero.o: index_first_zero.c index_first_zero.h
 	gcc -c index_first_zero.c
 index_last_zero.o: index_last_zero.c index_last_zero.h
 	gcc -c index_last_zero.c
