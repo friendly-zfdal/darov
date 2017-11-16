@@ -6,7 +6,7 @@
 #include "sum_before_and_after.h"
 int main(){
 char s;
-int c[100], sum = 0, m, z, n,p=0;
+int c[100], sum = 0,n,p=0;
 scanf("%d",&n);
 while(s!='\n'){
 scanf("%d%c",&c[p],&s);
