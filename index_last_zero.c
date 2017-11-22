@@ -1,12 +1,9 @@
 #include <stdio.h>
 int index_last_zero(int c[],int p){
-int k,m;
-	for (k=p;k>=0;k--){
-	if(c[k]!=0){
-		for (m=k;m>=0;m--){
-		if(c[m]==0)
-		return m;
+int i,m;
+	for (i=p-1;i>=0;i--){
+		if(c[i]==0)
+		return i;
 }	
 }
-}
-}
+

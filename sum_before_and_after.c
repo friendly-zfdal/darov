@@ -7,7 +7,7 @@ int i, sum1=0, sum2=0;
 	for(i=0;i<=index_first_zero(c,p);i++){
 	sum1+=abs(c[i]);
 	}
-	for(i=p;i>=index_last_zero(c,p);i--)
+	for(i=p-1;i>=index_last_zero(c,p);i--)
 	{
 	sum2+=abs(c[i]);
 	}
